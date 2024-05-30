@@ -1,0 +1,749 @@
+{
+    "category": [
+        {
+        "id": "100023",
+        "name": "Books",
+        "layout": "waterfall"
+        },
+        {
+        "id": "100024",
+        "name": "Mobile Phones",
+        "layout": "linear"
+        },
+        {
+        "id": "100025",
+        "name": "Laptops",
+        "layout": "waterfall"
+        },
+        {
+        "id": "100026",
+        "name": "Games",
+        "layout": "linear"
+        },
+        {
+        "id": "100027",
+        "name": "Beauty",
+        "layout": "waterfall"
+        },
+        {
+        "id": "100028",
+        "name": "Fitness",
+        "layout": "linear"
+        },
+        {
+        "id": "100029",
+        "name": "Business & Finance",
+        "layout": "waterfall"
+        }
+    ],
+    "card_offers": [
+        {
+            "id": "11236",
+            "percentage": 10.0,
+            "card_name": "HDFC Bank Credit card",
+            "offer_desc": "Flat 10% cashback on No Cost EMI and many more benefits!",
+            "max_discount": "Upto ₹5000 Cashback",
+            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4K5-dxS7WCL5HjJj4N8RwVH2_hNXxJgkHikFCb82VTWW9-C8TF6m&usqp=CAE&s"
+        },
+        {
+            "id": "10132",
+            "percentage": 15.0,
+            "card_name": "IFBC Bank Credit card",
+            "offer_desc": "Flat 15% cashback on No Cost EMI and many more benefits! Check the site",
+            "max_discount": "Flat ₹1000",
+            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIJsVljT6ge_Y3PoJnPyuvWpRjBnbZkoopaQ&usqp=CAU"
+        },
+        {
+            "id": "10134",
+            "percentage": 5.0,
+            "card_name": "Axis Bank Credit card",
+            "offer_desc": "Flat 5% cashback.",
+            "max_discount": "Flat ₹1000",
+            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNDQXfDrWlD2JwUSw_6VYqOdcTjyaU2s6WQQ&usqp=CAU"
+        }
+    ],
+    "products": [
+        {
+            "id": "200001",
+            "name": "To Kill a Mockingbird",
+            "rating": 5.0,
+            "review_count": 1587,
+            "price": 550,
+            "category_id": "100023",
+            "card_offer_ids": ["10134", "10132"],
+            "image_url": "https://books.google.co.in/books/publisher/content?id=u019AwAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U2ulEEQiCZ1Uy1JW7k6EEUcCKdYiw&w=200",
+            "description": "Free Delivery | Get it by **Sunday, 5 December**\n10 days Replacement"
+        },
+        {
+            "id": "200002",
+            "name": "The Catcher in the Rye",
+            "rating": 4.5,
+            "review_count": 154,
+            "price": 480,
+            "category_id": "100023",
+            "card_offer_ids": ["10132"],
+            "image_url": "https://books.google.co.in/books/publisher/content?id=mZunDwAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U07lP3riniWKMhZBYyJJ6DAX_jcFg&w=200",
+            "description": "Free Delivery | **Explore our website** by [clicking on this link](https://en.wikipedia.org/wiki/The_Catcher_in_the_Rye) now.\n10 days Replacement"
+        },
+        {
+            "id": "200003",
+            "name": "One Hundred Years of Solitude",
+            "rating": 5,
+            "review_count": 167,
+            "price": 370,
+            "category_id": "100023",
+            "card_offer_ids": ["10134"],
+            "image_url": "https://books.google.co.in/books/publisher/content?id=AfB8EAAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U3oJAgBPPUa-uhG_tx3hXMNheD-GQ&w=200",
+            "description": "Free Delivery | Get it by **Monday, 6 December**\n10 days Replacement"
+        },
+        {
+            "id": "200004",
+            "name": "Brave New World",
+            "rating": 4.3,
+            "review_count": 2860,
+            "price": 440,
+            "category_id": "100023",
+            "card_offer_ids": ["11236"],
+            "image_url": "https://books.google.co.in/books/publisher/content?id=vXHoDwAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U1S-HIQTGnjPs_aHTm8WAxMYWxq0Q&w=200",
+            "description": "Free Delivery | If you'd like to see our **product catalog**, [click here](https://en.wikipedia.org/wiki/Brave_New_World) for options."
+        },
+        {
+            "id": "200005",
+            "name": "The Bell Jar",
+            "rating": 5.0,
+            "review_count": 25001,
+            "price": 449,
+            "category_id": "100023",
+            "card_offer_ids": ["10134", "11236"],
+            "image_url": "https://books.google.co.in/books/publisher/content?id=yA5jEAAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U2Ge6JYPDoPhkBjg-4BYRAhZigaQA&w=200",
+            "description": "Free Delivery | Get it by **Satuday, 4 December**\n10 days Replacement"
+        },
+        {
+            "id": "200006",
+            "name": "The Sun Also Rises",
+            "rating": 2.3,
+            "review_count": 5481,
+            "price": 490,
+            "category_id": "100023",
+            "card_offer_ids": [],
+            "image_url": "https://books.google.co.in/books/publisher/content?id=EhRiEAAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U0OAWNatsTtiuuxSSO8xbBnAl2b5A&w=200",
+            "description": "Free Delivery | Get it by Saturday, 4 December\n10 days Replacement"
+        },
+        {
+            "id": "200007",
+            "name": "Fahrenheit 451",
+            "rating": 4.5,
+            "review_count": 3804,
+            "price": 699,
+            "category_id": "100023",
+            "card_offer_ids": ["11236", "10132"],
+            "image_url": "https://books.google.co.in/books/content?id=Shsqc7sd_QoC&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U0-03Uw41io0N6uEz1fkeFZsuS-6w&w=200",
+            "description": "Free Delivery | Get it by **Friday, 3 December**\n10 days Replacement"
+        },
+        {
+            "id": "200008",
+            "name": "Invisible Man",
+            "rating": 3.2,
+            "review_count": 4532,
+            "price": 549,
+            "category_id": "100023",
+            "card_offer_ids": [],
+            "image_url": "https://books.google.co.in/books/content?id=vdAOAAAAIAAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U2Vl4xAgjM1ijfGq6k6FxHZbPnCtg&w=200",
+            "description": "Free Delivery | [Click here](https://en.wikipedia.org/wiki/The_Invisible_Man_(2020_film)) for more details about this **article** \n10 days Replacement"
+        },
+        {
+            "id": "200009",
+            "name": "The Road",
+            "rating": 3.3,
+            "review_count": 1459,
+            "price": 329,
+            "category_id": "100023",
+            "card_offer_ids": ["10134", "10132"],
+            "image_url": "https://books.google.co.in/books/content?id=WIKrD-GKehQC&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U0yEcWbSetJQsGuqW3sgQgpM9H0Eg&w=200",
+            "description": "Free Delivery | Get it by **Saturday, 4 December**\n10 days Replacement"
+        },
+        {
+            "id": "200010",
+            "name": "The Handmaid's Tale",
+            "rating": 4.6,
+            "review_count": 984,
+            "price": 799,
+            "category_id": "100023",
+            "card_offer_ids": ["10132"],
+            "image_url": "https://books.google.co.in/books/content?id=o79lk6nTsRgC&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U2M2zHMRvvjZpRc6lKdGjrsnOCImg&w=200",
+            "description": "Free Delivery | Read more from the [link here[(https://en.wikipedia.org/wiki/The_Handmaid%27s_Tale)\n10 days Replacement"
+        },
+        {
+            "id": "200011",
+            "name": "Slaughterhouse-Five",
+            "rating": 4.3,
+            "review_count": 5482,
+            "price": 469,
+            "category_id": "100023",
+            "card_offer_ids": ["10134"],
+            "image_url": "https://books.google.co.in/books/publisher/content?id=XlD9DwAAQBAJ&pg=PA1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U0IkGeO5CfbfoRdZKK2jJLrNhY_Fg&w=200",
+            "description": "Free Delivery | For **frequently asked questions**, [click here](https://www.imdb.com/title/tt5834204/) for answers."
+        },
+        {
+            "id": "200012",
+            "name": "Lord of the Flies",
+            "rating": 2.9,
+            "review_count": 4534,
+            "category_id": "100023",
+            "price": 450,
+            "card_offer_ids": ["11236"],
+            "image_url": "https://upload.wikimedia.org/wikipedia/en/9/9b/LordOfTheFliesBookCover.jpg",
+            "description": "Free Delivery | Get it by **Wednesday, 8 November**\n10 days Replacement"
+        },
+        {
+            "id": "200013",
+            "name": "The Picture of Dorian Gray",
+            "rating": 4.9,
+            "review_count": 894,
+            "price": 399,
+            "category_id": "100023",
+            "card_offer_ids": ["10134", "11236"],
+            "image_url": "https://m.media-amazon.com/images/M/MV5BMTY5ODc1NjU5N15BMl5BanBnXkFtZTcwMTUyNDg3Mg@@._V1_.jpg",
+            "description": "Free Delivery | Get it by **Wednesday, 8 November**\n10 days Replacement"
+        },
+        {
+            "id": "200014",
+            "name": "Crime and Punishment",
+            "rating": 3.9,
+            "review_count": 768,
+            "price": 349,
+            "category_id": "100023",
+            "card_offer_ids": [],
+            "image_url": "https://books.google.co.in/books/content?id=aCgVAAAAYAAJ&pg=PA3&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U3lBIBB2rsBvgkVSHfIYKpy-mVrkA&w=200",
+            "description": "Free Delivery | Get it by **Friday, 10 November**\n10 days Replacement"
+        },
+        {
+            "id": "200015",
+            "name": "A Clockwork Orange",
+            "rating": 3.6,
+            "review_count": 343,
+            "price": 549,
+            "category_id": "100023",
+            "card_offer_ids": ["11236", "10132"],
+            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9g-lFmANFYARxsJOzsw7bLRd77Q_w51n7OqfRMzpAZp7z4GDDbcrKAjTPNsRzieGYzk8&usqp=CAU",
+            "description": "Free Delivery | Get it by **Monday, 6 November**\n10 days Replacement"
+        },
+        {
+            "id": "200016",
+            "name": "The Stranger",
+            "rating": 4.3,
+            "review_count": 6283,
+            "price": 769,
+            "category_id": "100023",
+            "card_offer_ids": [],
+            "image_url": "https://books.google.co.in/books/publisher/content?id=XWlcAQAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U0_WVZaO-l3tVIS6EpqeKByRnzKFw&w=200",
+            "description": "Free Delivery | To access the user manual, [click here](https://www.amazon.in/s?k=Rock+Tawa+Dosa+Tawa+12+Inch+Pre-Seasoned+Cast+Iron+with+Free+Wooden+Spatul&i=kitchen&crid=132DOTHNZ9A6&sprefix=rock+tawa+dosa+tawa+12+inch+pre-seasoned+cast+iron+with+free+wooden+spatul%2Ckitchen%2C206&ref=nb_sb_noss) for instructions.\n10 days Replacement"
+        },
+        {
+            "id": "200017",
+            "name": "The Grapes of Wrath",
+            "rating": 4.2,
+            "review_count": 8800,
+            "price": 660,
+            "category_id": "100023",
+            "card_offer_ids": ["10134", "10132"],
+            "image_url": "https://books.google.co.in/books/content?id=hNisMz5W1DQC&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U1cCExR--JWD6ovxZkQ-9nBBmmwSQ&w=200",
+            "description": "Free Delivery | For related articles and resources, [click this link](https://developer.apple.com/documentation/uikit/uiview/1622469-hittest) to explore.\n10 days Replacement"
+        },
+        {
+            "id": "200018",
+            "name": "Heart of Darkness",
+            "rating": 4.4,
+            "review_count": 9373,
+            "price": 345,
+            "category_id": "100023",
+            "card_offer_ids": ["10132"],
+            "image_url": "https://books.google.co.in/books/content?id=GXA2dZ1Xe8sC&pg=PA1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U34-AFlYUc5tjaDnSQp3NPqoUGz1A&w=200",
+            "description": "Free Delivery | To visit our blog, [follow this link](https://developer.apple.com/support/beta-software/) for articles.\n10 days Replacement"
+        },
+        {
+            "id": "200019",
+            "name": "Pride and Prejudice",
+            "rating": 3.4,
+            "review_count": 234,
+            "price": 470,
+            "category_id": "100023",
+            "card_offer_ids": ["10134"],
+            "image_url": "https://en.wikipedia.org/wiki/Pride_and_Prejudice#/media/File:PrideAndPrejudiceTitlePage.jpg",
+            "description": "Free Delivery | Get it by Friday, 3 December\n10 days Replacement"
+        },
+        {
+            "id": "200020",
+            "name": "The Road Not Taken",
+            "rating": 3.6,
+            "review_count": 3435,
+            "price": 449,
+            "category_id": "100023",
+            "card_offer_ids": ["11236"],
+            "image_url": "https://npr.brightspotcdn.com/dims4/default/eccb1f2/2147483647/strip/true/crop/1500x2250+0+0/resize/880x1320!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Flegacy%2Fsites%2Fwamc%2Ffiles%2F201508%2Fdavidorr-theroadnottaken.jpg",
+            "description": "Free Delivery | For **customer reviews** and testimonials, [click here](https://developer.apple.com/support/install-beta/) to read\n10 days Replacement"
+        },
+        {
+            "id": "200021",
+            "name": "OnePlus Nord CE 3 5G (Aqua Surge, 12GB RAM, 256GB Storage)",
+            "rating": 4,
+            "review_count": 4392,
+            "price": 28998,
+            "category_id": "100024",
+            "card_offer_ids": ["10132"],
+            "image_url": "https://www.reliancedigital.in/medias/OnePlus-Nord-CE3-Mobile-Phone-493838774-i-1-200Wx200H?context=bWFzdGVyfGltYWdlc3wzMDcyMTR8aW1hZ2UvanBlZ3xpbWFnZXMvaGIxL2gzMy8xMDAzMDc5NTU4NzYxNC5qcGd8NWNkM2M0NjdkNDU3YTU5OWI1NTg1NWExZjdiNmRjYWYxZDc1ODNjMjJiNTVmOGUxNmFlZTJjMWIwZWYyOTdjNg",
+            "description": "Free Delivery | Get it by **Saturday, 4 December**\n10 days Replacement",
+            "colors": ["black", "green", "blue", "orange"]
+        },
+        {
+            "id": "200022",
+            "name": "Redmi Note 12 Pro 5G (Glacier Blue, 8GB RAM, 256GB Storage)",
+            "rating": 3.2,
+            "review_count": 92,
+            "price": 21290,
+            "category_id": "100024",
+            "card_offer_ids": ["11236", "10132"],
+            "image_url": "https://m.media-amazon.com/images/I/61pCckLFszL._SY200_.jpg",
+            "description": "Free Delivery | Get it by **Sunday, 5 December**\n10 days Replacement",
+            "colors": ["black", "white", "blue", "gray"]
+        },
+        {
+            "id": "200023",
+            "name": "realme narzo 60 Pro (Cosmic Black,12GB+1TB) Ultra Smooth 120 Hz Super Amoled Curved Display",
+            "rating": 4.1,
+            "review_count": 1374,
+            "price": 26999,
+            "category_id": "100024",
+            "card_offer_ids": [],
+            "image_url": "https://m.media-amazon.com/images/I/81ZV6G2iRrL._AC_UL100_FMwebp_QL65_.jpg",
+            "description": "Free Delivery | Get it by **Monday, 6 December**\n10 days Replacement",
+            "colors": ["black", "yellow"]
+        },
+        {
+            "id": "200024",
+            "name": "Samsung Galaxy A34 5G (Awesome Graphite, 8GB, 128GB Storage) | 48 MP No Shake Cam (OIS) | IP6",
+            "rating": 3.8,
+            "review_count": 906,
+            "price": 27999,
+            "category_id": "100024",
+            "card_offer_ids": ["10134", "10132"],
+            "image_url": "https://m.media-amazon.com/images/I/71o1csyQILL._AC_UL150_FMwebp_QL65_.jpg",
+            "description": "Free Delivery | Get it by **Tuesday, 7 December**\n10 days Replacement",
+            "colors": ["green", "blue", "red", "gray"]
+        },
+        {
+            "id": "200025",
+            "name": "iQOO Neo 7 5G (Interstellar Black, 8GB RAM, 128GB Storage)",
+            "rating": 4.0,
+            "review_count": 5306,
+            "price": 27999,
+            "category_id": "100024",
+            "card_offer_ids": ["10132"],
+            "image_url": "https://m.media-amazon.com/images/I/61IiuWQcVjL._AC_UL150_FMwebp_QL65_.jpg",
+            "description": "Free Delivery | To view the demo, [click on this link](https://developer.apple.com/documentation/uikit/uiview/1622415-clipstobounds) for a live experience\n10 days Replacement",
+            "colors": ["blue", "red", "green", "gray"]
+        },
+        {
+            "id": "200026",
+            "name": "VIVO V27 5G (Magic Blue, 128 GB) (8 GB RAM)",
+            "rating": 3.2,
+            "review_count": 42,
+            "price": 29298,
+            "category_id": "100024",
+            "card_offer_ids": ["10134"],
+            "image_url": "https://m.media-amazon.com/images/I/71waR9n2enL._AC_UL150_QL65_.jpg",
+            "description": "Free Delivery | Get it by **Saturday, 4 December**\n10 days Replacement",
+            "colors": ["purple", "maroon"]
+        },
+        {
+            "id": "200027",
+            "name": "HONOR 90 (Midnight Black, 12GB + 512GB) | India's First Eye Risk-Free Display | 200MP Main & 50MP Selfie Camera",
+            "rating": 3.9,
+            "review_count": 620,
+            "price": 33999,
+            "category_id": "100024",
+            "card_offer_ids": ["11236"],
+            "image_url": "https://m.media-amazon.com/images/I/81jeBCCEzXL._AC_UL150_QL65_.jpg",
+            "description": "Free Delivery | Get it by **Friday, 5 December**",
+            "colors": ["black", "red", "teal"]
+        },
+        {
+            "id": "200028",
+            "name": "realme 11 Pro+ 5G (Oasis Green, 12GB RAM, 256GB Storage) | 120 Hz Curved Display | 200MP Prolight Camera | 7050 5G Dimensity | 100W SUPERVOOC ",
+            "rating": 4.2,
+            "review_count": 254,
+            "price": 29785,
+            "category_id": "100024",
+            "card_offer_ids": ["10132"],
+            "image_url": "https://m.media-amazon.com/images/I/81TeaKroXqL._AC_UL150_QL65_.jpg",
+            "description": "Free Delivery | For pricing details, [click here](https://developer.apple.com/documentation/uikit/uiscrollview) to learn more.\n10 days Replacement",
+            "colors": ["white", "gray", "blue"]
+        },
+        {
+            "id": "200029",
+            "name": "Vivo V29 5G ((Red, 128 GB) (8 GB RAM))",
+            "rating": 5.0,
+            "review_count": 2,
+            "price": 32149,
+            "category_id": "100024",
+            "card_offer_ids": ["11236", "10132"],
+            "image_url": "https://m.media-amazon.com/images/I/71UCRQ9+CrL._AC_UL150_QL65_.jpg",
+            "description": "Free Delivery | To contact our support team, [click this link](https://developer.apple.com/documentation/uikit/uitableview) for assistance.\n10 days Replacement",
+            "colors": []
+        },
+        {
+            "id": "200030",
+            "name": "iQOO Neo 7 5G (Frost Blue, 12GB RAM, 256GB Storage) | Dimensity 8200, only 4nm Processor in The Segment",
+            "rating": 4.0,
+            "review_count": 5306,
+            "price": 31999,
+            "category_id": "100024",
+            "card_offer_ids": [],
+            "image_url": "https://m.media-amazon.com/images/I/61JS7lF2aqL._AC_UL150_QL65_.jpg",
+            "description": "Free Delivery | Get it by **Wednesday, 8 December**\n10 days Replacement",
+            "colors": ["purple", "yellow"]
+        },
+        {
+            "id": "200031",
+            "name": "Lenovo V14 Intel Core i5 10th Gen 14\" (35.56cms) Full HD Thin and Light Laptop (8GB RAM/ 1TB HDD/Windows 10 Home/Iron Grey/ 1.6 kg)",
+            "rating": 3.1,
+            "review_count": 77,
+            "price": 48999,
+            "category_id": "100025",
+            "card_offer_ids": [],
+            "image_url": "https://m.media-amazon.com/images/I/71iyJJMr-NL._AC_UL150_QL65_.jpg",
+            "description": "Free Delivery | Get it by **Monday, 6 December**\n10 days Replacement"
+        },
+        {
+            "id": "200032",
+            "name": "LG Gram 10th Gen Intel Core i5-1035G7 cm 38.1 cm (15-inch) IPS Full HD (1920X1080) Thin and Light Laptop (8GB/256GB SSD/Windows 10",
+            "rating": 4,
+            "review_count": 32,
+            "price": 57990,
+            "category_id": "100025",
+            "card_offer_ids": ["10134", "10132"],
+            "image_url": "https://m.media-amazon.com/images/I/71Dv5BtTh8L._AC_UL150_QL65_.jpg",
+            "description": "Free Delivery | Get it by **Thursday, 9 December**\n10 days Replacement"
+        },
+        {
+            "id": "200033",
+            "name": "Lenovo ThinkPad E14 Intel Core i5 14 inches (35.5cm)",
+            "rating": 4.5,
+            "review_count": 481,
+            "price": 68999,
+            "category_id": "100025",
+            "card_offer_ids": ["10132"],
+            "image_url": "https://m.media-amazon.com/images/I/71k3N4gxNeL._AC_UL150_QL65_.jpg",
+            "description": "Free Delivery | For terms and conditions, [click on this hyperlink](https://developer.apple.com/documentation/uikit/uitableviewcell) for details.\n10 days Replacement"
+        },
+        {
+            "id": "200034",
+            "name": "ASUS VivoBook 14 (2020)",
+            "rating": 3.4,
+            "review_count": 801,
+            "price": 43500,
+            "category_id": "100025",
+            "card_offer_ids": ["10134"],
+            "image_url": "https://m.media-amazon.com/images/I/71WuDXpTAlL._AC_UL150_QL65_.jpg",
+            "description": "Free Delivery | To check out our social media profiles, [click here](https://developer.apple.com/documentation/uikit/views_and_controls/table_views/filling_a_table_with_data) for updates."
+        },
+        {
+            "id": "200035",
+            "name": "Acer Nitro 5 Intel Core i5-9th Gen 15.6\" (39.62cms) Display 1920 x 1080 Thin and Light Gaming Laptop (8GB Ram/1TB HDD/Windows 10",
+            "rating": 4.4,
+            "review_count": 566,
+            "price": 75499,
+            "category_id": "100025",
+            "card_offer_ids": ["11236"],
+            "image_url": "https://m.media-amazon.com/images/I/81IXuyeJhYL._AC_UL150_QL65_.jpg",
+            "description": "Free Delivery | Get it by Wednesday, 8 December\n10 days Replacement"
+        },
+        {
+            "id": "200036",
+            "name": "Lenovo ThinkPad E14 Intel Core i3 10th Gen 14 inches Full HD Business Laptop (4GB RAM/ 256GB SSD/DOS/Black/ 1.69 kg), 20RAS0SE00",
+            "rating": 4.5,
+            "review_count": 178,
+            "price": 47999,
+            "category_id": "100025",
+            "card_offer_ids": ["10132"],
+            "image_url": "https://m.media-amazon.com/images/I/5170M8kT8rL._AC_UL150_QL65_.jpg",
+            "description": "Free Delivery | Follow this [link](https://www.google.com/search?q=laptops) to visit our blog\n10 days Replacement"
+        },
+        {
+            "id": "200037",
+            "name": "Microsoft Surface Pro X 1876 13 Inches Laptop (Qualcomm Sq1/8Gb/128Gb Ssd/Windows 10 Home Sq1 Adreno 685 Gpu Graphics, Wi-Fi)",
+            "rating": 3.2,
+            "review_count": 69,
+            "price": 76000,
+            "category_id": "100025",
+            "card_offer_ids": ["11236", "10132"],
+            "image_url": "https://m.media-amazon.com/images/I/51ZqIfidWfL._AC_UL150_QL65_.jpg",
+            "description": "Free Delivery | To read the full article, [click this link](https://www.amazon.in/Microsoft-Surface-Graphite-Bluetooth-Ultimate) for details.\n10 days Replacement"
+        },
+        {
+            "id": "200038",
+            "name": "Acer Aspire 3 AMD Ryzen 5-3500U 15.6 inches Full HD IPS Display Thin and Light Business Laptop",
+            "rating": 3.9,
+            "review_count": 77,
+            "price": 36499,
+            "category_id": "100025",
+            "card_offer_ids": [],
+            "image_url": "https://m.media-amazon.com/images/I/71hLXwJ4fiL._AC_UL150_QL65_.jpg",
+            "description": "Free Delivery | For more information, [click here](https://www.amazon.in/s?k=Rock+Tawa+Dosa) to explore our website."
+        },
+        {
+            "id": "200039",
+            "name": "ASUS ZenBook Duo Intel Core i5-10210U",
+            "rating": 4.5,
+            "review_count": 67,
+            "price": 84990,
+            "category_id": "100025",
+            "card_offer_ids": [],
+            "image_url": "https://m.media-amazon.com/images/I/81K9Es2DDFL._AC_UL150_QL65_.jpg",
+            "description": "Free Delivery | To visit our blog, follow this [link](https://www.google.com/search?q=laptops)\n10 days Replacement"
+        },
+        {
+            "id": "200040",
+            "name": "LG Gram 10th Gen Intel Core i5-1035G7 cm 38.1 cm (15-inch) IPS Full HD",
+            "rating": 3.6,
+            "review_count": 32,
+            "price": 57990,
+            "category_id": "100025",
+            "card_offer_ids": ["10134", "10132"],
+            "image_url": "https://m.media-amazon.com/images/I/71Dv5BtTh8L._AC_UL150_FMwebp_QL65_.jpg",
+            "description": "Free Delivery | To access the user manual, [click here](https://www.google.com/search?q=laptops).\n10 days Replacement"
+        },
+        {
+            "id": "200041",
+            "name": "GTA-4 Pc Game DVD Offline With Box By ADGAMES",
+            "rating": 3.2,
+            "review_count": 16,
+            "price": 349,
+            "category_id": "100026",
+            "card_offer_ids": ["10132"],
+            "image_url": "https://m.media-amazon.com/images/I/81rmm5bt2sS._AC_UY200_FMwebp_QL65_.jpg",
+            "description": "Free Delivery | Get it by **Thursday, 29 November**\n10 days Replacement"
+        },
+        {
+            "id": "200042",
+            "name": "International Cricket 17 (PC GAME) - PC Download (No Online Multiplayer/No REDEEM* Code) -- | NO DVD NO CD |",
+            "rating": 5.0,
+            "review_count": 1,
+            "price": 599,
+            "category_id": "100026",
+            "card_offer_ids": ["11236", "10132"],
+            "image_url": "https://m.media-amazon.com/images/I/71Y+SiD6xxL._AC_UY150_FMwebp_QL65_.jpg",
+            "description": "Free Delivery | Get it by **Tuesday, 5 December**\n10 days Replacement"
+        },
+        {
+            "id": "200043",
+            "name": "GTA: 5 (FULL PC GAME) - | NO Online Multiplayer/NO ACTIVATION* Code | EMAIL DELIVERY IN 4 HRS | NO DVD NO CD",
+            "rating": 4.0,
+            "review_count": 11,
+            "price": 699,
+            "category_id": "100026",
+            "card_offer_ids": [],
+            "image_url": "https://m.media-amazon.com/images/I/61XPbhXBgTL._AC_UY150_FMwebp_QL65_.jpg",
+            "description": "Free Delivery | Get it by **Saturday, 27 November**\n10 days Replacement"
+        },
+        {
+            "id": "200044",
+            "name": "The Amazing Spidar-Men 2 PC Game DVD PC Game DVD Full Setup (offline) (no internet required) Physical Disc",
+            "rating": 1.0,
+            "review_count": 3,
+            "price": 399,
+            "category_id": "100026",
+            "card_offer_ids": [],
+            "image_url": "https://www.amazon.in/Amazing-Spidar-Men-internet-required-Physical/dp/B0BR3J4Q2M/ref=sr_1_7?crid=1CZ0I44840BM0&keywords=video+games+cd+for+pc&qid=1699032130&sprefix=video+games+cd%2Caps%2C217&sr=8-7",
+            "description": "Free Delivery | To visit our blog, follow this [link](https://www.amazon.in/ZIVIK-Upgraded-Portable-Assistant-Abdominal/dp/B0C6Y8JH8C/ref=sr_1_2?keywords=jukusa%2Bdouble%2Bsuction%2Bcups%2Bsit%2Bup%2Bassistant&nsdOptOutParam=true&qid=1699034735&sr=8-2&th=1)\n10 days Replacement"
+        },
+        {
+            "id": "200045",
+            "name": "Need-For-Speed Hot Pursuit Pc Game DVD Full Setup Offline (Physical Disc)",
+            "rating": 3.0,
+            "review_count": 3,
+            "price": 349,
+            "category_id": "100026",
+            "card_offer_ids": ["10134", "10132"],
+            "image_url": "https://m.media-amazon.com/images/I/81F+CcgbGBL._AC_UY150_FMwebp_QL65_.jpg",
+            "description": "Free Delivery | Get it by **Tuesday, 11 December**\n10 days Replacement"
+        },
+        {
+            "id": "200046",
+            "name": "Beauty of Joseon SPF 50 Relief Sun Cream, 50ml, Set of 1",
+            "rating": 4.5,
+            "review_count": 735,
+            "price": 1130,
+            "category_id": "100027",
+            "card_offer_ids": [],
+            "image_url": "https://m.media-amazon.com/images/I/41RJs-uvoYL._AC_UL150_FMwebp_QL65_.jpg",
+            "description": "Free Delivery | Get it by **Wednesday, 12 December**\n10 days Replacement"
+        },
+        {
+            "id": "200047",
+            "name": "Swiss Beauty Hydra Anti Wrinkle Eye Serum Patch| Treats Dark Circles, Fine Lines And Wrinkles | Enriched With Collagen And Aloe Vera Extract | Shade -Gold, 60 Pcs|",
+            "rating": 4.1,
+            "review_count": 1206,
+            "price": 314,
+            "category_id": "100027",
+            "card_offer_ids": ["10134", "10132"],
+            "image_url": "https://m.media-amazon.com/images/I/51TfLKO00IL._AC_UL150_FMwebp_QL65_.jpg",
+            "description": "Free Delivery | If you'd like to see our product catalog, [click here](https://www.amazon.in/s?k=Rock+Tawa+Dosa+Tawa+12+Inch+Pre-Seasoned+Cast+Iron+with+Free+Wooden+Spatul&i=kitchen&crid=132DOTHNZ9A6&sprefix=rock+tawa+dosa+tawa+12+inch+pre-seasoned+cast+iron+with+free+wooden+spatul%2Ckitchen%2C206&ref=nb_sb_noss)\n10 days Replacement"
+        },
+        {
+            "id": "200048",
+            "name": "Ice Face Roller Silicone Facial Cube for Eyes Neck Massage Remove Dark Circle Pore Shrink Face Beauty Skin Care Ice Mould Kitchen Tools (Blue)",
+            "rating": 3.6,
+            "review_count": 3170,
+            "price": 49,
+            "category_id": "100027",
+            "card_offer_ids": ["10132"],
+            "image_url": "https://m.media-amazon.com/images/I/61DKLhAwWuL._AC_UL150_FMwebp_QL65_.jpg",
+            "description": "Free Delivery | Get it by **Tuesday, 11 December**\n10 days Replacement"
+        },
+        {
+            "id": "200049",
+            "name": "NIVEA Pearl and Beauty 50ml Deo Roll On | With Pearl Extracts & Avocado Oil| 48 H Smooth & Beautiful Underarms| 0% Alcohol | For Women",
+            "rating": 4.4,
+            "review_count": 19130,
+            "price": 154.89,
+            "category_id": "100027",
+            "card_offer_ids": ["11236", "10132"],
+            "image_url": "https://m.media-amazon.com/images/I/41LS9x7LhjL._AC_UL150_FMwebp_QL65_.jpg",
+            "description": "Free Delivery | For more information on this topic, please [click here](https://www.amazon.in/s?bbn=1380267031&rh=n%3A1380267031%2Cp_n_condition-type%3A8609960031&pf_rd_i=5925789031&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_p=9c4bf4a2-1be6-4013-8f2c-f568f43241bc&pf_rd_r=0BSMBF3PWWNN9NDGETTM&pf_rd_s=merchandised-search-1&ref=Halo_PC_3)\n10 days Replacement"
+        },
+        {
+            "id": "200050",
+            "name": "Swiss Beauty Ultimate 9 Pigmented Colors Eyeshadow Palette Long Wearing And Easily Blendable Eye Makeup Palette Matte, Shimmery And Metallic Finish - Multicolor-06, 6G",
+            "rating": 4.7,
+            "review_count": 23484,
+            "price": 215,
+            "category_id": "100027",
+            "card_offer_ids": [],
+            "image_url": "https://m.media-amazon.com/images/I/51Dwx1s7OPL._AC_UL150_FMwebp_QL65_.jpg",
+            "description": "Free Delivery | Get it by **Saturday, 30 November**\n10 days Replacement"
+        },
+        {
+            "id": "200051",
+            "name": "Kore PVC 10-40 Kg Home Gym Set with One 3 Ft Curl and One Pair Dumbbell Rods with Gym Accessories",
+            "rating": 3.4,
+            "review_count": 34434,
+            "price": 999,
+            "category_id": "100028",
+            "card_offer_ids": [],
+            "image_url": "https://m.media-amazon.com/images/I/81XNzjmXi+L._AC_UL150_FMwebp_QL65_.jpg",
+            "description": "Free Delivery | Get it by **Tuesday, 11 December**\n10 days Replacement"
+        },
+        {
+            "id": "200052",
+            "name": "Lifelong PVC Hex Dumbbells Pack of 2 for Home Gym Equipment Fitness Barbell|Gym Exercise|Home Workout, Gym Dumbbells|Dumbbells Weights for Men & Women (6 Months Warranty)",
+            "rating": 3.9,
+            "review_count": 4481,
+            "price": 138,
+            "category_id": "100028",
+            "card_offer_ids": ["10134", "10132"],
+            "image_url": "https://m.media-amazon.com/images/I/61Eq88ACOkL._AC_UL150_FMwebp_QL65_.jpg",
+            "description": "Free Delivery | Get it by **Thursday, 15 December\n20 days Replacement"
+        },
+        {
+            "id": "200053",
+            "name": "Jukusa Double Suction Cups Sit Up Assistant Fixed Foot Abdominal Muscle Trainer Sit Up Bar Leg Muscle Training Device Household Fitness Equipment for Body Building (Black)",
+            "rating": 4.3,
+            "review_count": 50,
+            "price": 698,
+            "category_id": "100028",
+            "card_offer_ids": ["10132"],
+            "image_url": "https://m.media-amazon.com/images/I/316os87dS8L._AC_UL150_FMwebp_QL65_.jpg",
+            "description": "Free Delivery | For more details, please [click here](https://www.amazon.in/ZIVIK-Upgraded-Portable-Assistant-Abdominal/dp/B0C6Y8JH8C/ref=sr_1_2?keywords=jukusa%2Bdouble%2Bsuction%2Bcups%2Bsit%2Bup%2Bassistant&nsdOptOutParam=true&qid=1699034735&sr=8-2&th=1)"
+        },
+        {
+            "id": "200054",
+            "name": "Kore PVC DM 4-40 Kg (Black/Black-Red/3 IN 1 Convertible) Dumbbells Set and Fitness Kit",
+            "rating": 4.4,
+            "review_count": 16764,
+            "price": 379,
+            "category_id": "100028",
+            "card_offer_ids": ["11236", "10132"],
+            "image_url": "https://m.media-amazon.com/images/I/71ENKrVJswL._AC_UL150_FMwebp_QL65_.jpg",
+            "description": "Free Delivery | Get it by **Wednesday, 10 December\n10 days Replacement"
+        },
+        {
+            "id": "200055",
+            "name": "Cockatoo Forearm Strengthener,Forearm Exercise Equipment,Grip Strengthener Fitness Equipment Home Gym Equipment for Men & Gym Equipment for Women,Wrist Strengthener (6 Month Warranty)",
+            "rating": 4.3,
+            "review_count": 46,
+            "price": 239,
+            "category_id": "100028",
+            "card_offer_ids": [],
+            "image_url": "https://m.media-amazon.com/images/I/6177AQuzKmL._AC_UL150_FMwebp_QL65_.jpg",
+            "description": "Free Delivery | Get it by **Friday, 10 October**\n10 days Replacement"
+        },
+        {
+            "id": "200056",
+            "name": "FIRST CHOICE Ab Roller, Abdominal Exercise Rollers,Automatic Rebound Abdominal Wheel",
+            "rating": 5.0,
+            "review_count": 1,
+            "price": 1696,
+            "category_id": "100028",
+            "card_offer_ids": [],
+            "image_url": "https://m.media-amazon.com/images/I/51uoRIq8kUL._AC_UL150_FMwebp_QL65_.jpg",
+            "description": "**Not deliverable** to your address"
+        },
+        {
+            "id": "200057",
+            "name": "Pigeon By Stovekraft Favourite Aluminium Pressure Cooker with Outer Lid Gas Stove Compatible 3 Litre Capacity for Healthy Cooking (Silver)",
+            "rating": 3.8,
+            "review_count": 24808,
+            "price": 649,
+            "category_id": "100029",
+            "card_offer_ids": ["10134", "10132"],
+            "image_url": "https://m.media-amazon.com/images/I/51xCU5ylKAL._AC_UL150_FMwebp_QL65_.jpg",
+            "description": "Free Delivery | Get it by **Sunday, 5 December**\n10 days Replacement"
+        },
+        {
+            "id": "200058",
+            "name": "Rock Tawa Dosa Tawa 12 Inch Pre-Seasoned Cast Iron with Free Wooden Spatula",
+            "rating": 4.2,
+            "review_count": 11635,
+            "price": 859,
+            "category_id": "100029",
+            "card_offer_ids": ["10132"],
+            "image_url": "https://m.media-amazon.com/images/I/81lC8iMZq1L._AC_UL150_FMwebp_QL65_.jpg",
+            "description": "Free Delivery | Get it by Tuesday, 3 Novemeber\n[Click here](https://www.amazon.in/Rock-Tawa-Pre-Seasoned-Cast-Skillet/dp/B01M0YZBMM/ref=sr_1_1?crid=132DOTHNZ9A6&keywords=Rock+Tawa+Dosa+Tawa+12+Inch+Pre-Seasoned+Cast+Iron+with+Free+Wooden+Spatul&nsdOptOutParam=true&qid=1699034435&s=kitchen&sprefix=rock+tawa+dosa+tawa+12+inch+pre-seasoned+cast+iron+with+free+wooden+spatul%2Ckitchen%2C206&sr=1-1) for the product info"
+        },
+        {
+            "id": "200059",
+            "name": "Pigeon Aluminium Nonstick Duo Pack Flat Tawa 250 and Fry Pan 200 Gift Set (Red)",
+            "rating": 3.2,
+            "review_count": 8914,
+            "price": 499,
+            "category_id": "100029",
+            "card_offer_ids": ["11236", "10132"],
+            "image_url": "https://m.media-amazon.com/images/I/510yXR4GoNL._AC_UL150_FMwebp_QL65_.jpg",
+            "description": "Free Delivery | Get it by **Monday, 6 December**\n10 days Replacement"
+        },
+        {
+            "id": "200060",
+            "name": "Lifelong LLGS912 Automatic Ignition 2 Burner Gas Stove with 6mm Toughened Glass Top, Automatic Ignition (Doorstep Service, 1 Year Warranty, Black) - Auto Ignition",
+            "rating": 3.9,
+            "review_count": 15093,
+            "price": 1349,
+            "category_id": "100029",
+            "card_offer_ids": [],
+            "image_url": "https://m.media-amazon.com/images/I/51SB72zh4QL._AC_UL640_FMwebp_QL65_.jpg",
+            "description": "Free Delivery | [Product link](https://www.amazon.in/Lifelong-LLGS912-Automatic-Ignition-Toughened/dp/B097PDHWY8)"
+        },
+        {
+            "id": "200061",
+            "name": "Lifelong LLGS990 Stainless Steel High Efficiency 2 Burner Gas Stove, ISI Certified",
+            "rating": 3.5,
+            "review_count": 2380,
+            "price": 1049,
+            "category_id": "100029",
+            "card_offer_ids": [],
+            "image_url": "https://m.media-amazon.com/images/I/61UTwRVX2aL._AC_UL150_FMwebp_QL65_.jpg",
+            "description": "Free Delivery | Get it by **Sunday, 5 December**\n10 days Replacement"
+        }
+    ]
+}
+

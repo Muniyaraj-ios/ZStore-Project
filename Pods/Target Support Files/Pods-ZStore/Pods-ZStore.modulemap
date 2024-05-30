@@ -1,0 +1,6 @@
+framework module Pods_ZStore {
+  umbrella header "Pods-ZStore-umbrella.h"
+
+  export *
+  module * { export * }
+}
