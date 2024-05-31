@@ -12,7 +12,7 @@ extension String{
     func setAttributedText(offer_price: String,originalPrice: String)->NSAttributedString{
         var attributedString = AttributedString(self)
         if let range1 = attributedString.range(of: offer_price) {
-            attributedString[range1].font = UIFont.boldSystemFont(ofSize: 19)
+            attributedString[range1].font = UIFont.boldSystemFont(ofSize: 18)
         }
         
         if let range2 = attributedString.range(of: originalPrice) {
@@ -23,7 +23,7 @@ extension String{
             attributedString[range2].strikethroughColor = UIColor.gray*/
             
             var container = AttributeContainer()
-            container.font = UIFont.systemFont(ofSize: 14)
+            container.font = UIFont.systemFont(ofSize: 13)
             container.strikethroughStyle = .thick
             container.foregroundColor = UIColor.gray
             container.strikethroughColor = UIColor.gray

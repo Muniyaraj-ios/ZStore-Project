@@ -2,7 +2,7 @@
 //  ProductsEntity+CoreDataProperties.swift
 //  
 //
-//  Created by Apple on 30/05/24.
+//  Created by Suriya_MacBook on 30/05/24.
 //
 //
 
@@ -16,7 +16,6 @@ extension ProductsEntity {
         return NSFetchRequest<ProductsEntity>(entityName: "ProductsEntity")
     }
 
-    @NSManaged public var card_offer_ids: NSObject?
     @NSManaged public var category_id: String?
     @NSManaged public var desc: String?
     @NSManaged public var id: String?
@@ -24,7 +23,9 @@ extension ProductsEntity {
     @NSManaged public var isFavourite: Bool
     @NSManaged public var name: String?
     @NSManaged public var price: Double
-    @NSManaged public var review_count: Int16
     @NSManaged public var rating: Double
+    @NSManaged public var review_count: Int32
+    @NSManaged public var card_offer_ids: String?
+    @NSManaged public var colors: String?
 
 }

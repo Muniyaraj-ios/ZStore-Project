@@ -15,8 +15,14 @@ final class CoreManger: NSObject{
     let context_k = AppDelegate.shared.persistentContainer.viewContext
     
     private(set) var homeData: MainEntity = .emptyData
-    
-    func setData(_ data: HomeDataModel){
+        
+    /*private(set)*/ var main_homeData: [ZstoreMainEntity] = ZstoreMainEntity.defaultData
+        
+    func setData(_ data: HomeDataModel,_ closure:((String)->())?){
+        removeExistingEntities(CategoryEntity.self)
+        removeExistingEntities(CardOfferEntity.self)
+        removeExistingEntities(ProductsEntity.self)
+        
         for cat in data.category{
             let catgory_entity = CategoryEntity(context: context_k)
             catgory_entity.id = cat.id
@@ -42,36 +48,64 @@ final class CoreManger: NSObject{
             product_entity.name = product.name
             product_entity.price = product.price
             product_entity.rating = product.rating
-            product_entity.review_count = Int16(product.review_count)
-            product_entity.card_offer_ids = product.card_offer_ids as NSObject?
+            product_entity.review_count = Int32(product.review_count)
+            product_entity.card_offer_ids = product.card_offer_ids.joined(separator: ",")
+            product_entity.colors = product.colors?.joined(separator: ",")
         }
         do{
             try context_k.save()
             print("Data saved successfully")
+            closure?("Data Saved Successfully")
         }catch let error{
             print("Error : \(error.localizedDescription)")
+            closure?("Data Saved get error : \(error.localizedDescription)")
+        }
+    }
+    func removeExistingEntities<T: NSManagedObject>(_ request: T.Type) {
+        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = request.fetchRequest()
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+
+        do {
+            try context_k.execute(deleteRequest)
+        } catch let error as NSError {
+            print("Could not delete \(request.entity()): \(error), \(error.userInfo)")
         }
     }
     
-    func fetchData()->MainEntity{
+    func fetchData(_ sorttype: sel_FilterState,_ closure:(()->())?){
         
         let catgory_entity = CategoryEntity.fetchRequest()
         let cardoffer_entity = CardOfferEntity.fetchRequest()
         let product_entity = ProductsEntity.fetchRequest()
         
-//        let product_Entity = NSFetchRequest<NSFetchRequestResult>(entityName: "ProductsEntity")
-                
+//        product_entity.predicate = NSPredicate(format: "name CONTAINS %@", "")
+        switch sorttype{
+        case .rating:
+            product_entity.sortDescriptors = [.init(key: "rating", ascending: false)]
+            break
+        case .price:
+            product_entity.sortDescriptors = [.init(key: "price", ascending: false)]
+            break
+        }
         
         do{
             let categories = try context_k.fetch(catgory_entity)
             let cardoffers = try context_k.fetch(cardoffer_entity)
             let productS = try context_k.fetch(product_entity)
-            return MainEntity(category: categories, offer: cardoffers, product: productS)
             
+            let categoryMainEntity = ZstoreMainEntity(type: .categories, items: MainEntity(category: categories))
+            let offerMainEntity = ZstoreMainEntity(type: .offers, items: MainEntity(offer: cardoffers))
+            let productMainEntity = ZstoreMainEntity(type: .products, items: MainEntity(product: productS))
+            
+            main_homeData = [categoryMainEntity,offerMainEntity,productMainEntity]
+            
+            homeData = MainEntity(category: categories, offer: cardoffers, product: productS)
+            closure?()
         }catch{
             print("Error getting fetch data : \(error.localizedDescription)")
+            main_homeData = ZstoreMainEntity.defaultData
+            homeData = .emptyData
         }
-        return MainEntity()
     }
     func deleteData(alldata: MainEntity){
         guard let categories = alldata.category,let cardoffers = alldata.offer,let products = alldata.product else{return}
@@ -93,6 +127,23 @@ final class CoreManger: NSObject{
             print("Delete get error : \(error.localizedDescription)")
         }
     }
+    func updateFavouriteStatus(_ productId: String,status favourite: Bool){
+        let product_entity = ProductsEntity.fetchRequest()
+        product_entity.predicate = NSPredicate(format: "id == %@", productId)
+        do{
+            let result = try context_k.fetch(product_entity)
+            if let product = result.first{
+                product.isFavourite = favourite
+                try context_k.save()
+                print("Favorite status updated successfully.")
+            }else {
+                print("Product with ID \(productId) not found.")
+            }
+            
+        }catch{
+            print("Failed to update favorite status: \(error.localizedDescription)")
+        }
+    }
 }
 
 struct MainEntity{
@@ -102,4 +153,32 @@ struct MainEntity{
 }
 extension MainEntity{
     static let emptyData = MainEntity(category: [], offer: [], product: [])
+}
+enum ZstoreProductType{
+    case categories
+    case offers
+    case products
+}
+
+struct ZstoreMainEntity{
+    var type: ZstoreProductType
+    var items: MainEntity
+}
+extension ZstoreMainEntity{
+    static let defaultData = [
+        ZstoreMainEntity(type: .categories, items: .emptyData),
+        ZstoreMainEntity(type: .offers, items: .emptyData),
+        ZstoreMainEntity(type: .products, items: .emptyData),
+    ]
+    
+    mutating func updateFavoriteStatus(for productID: String, isFavorite: Bool) {
+          guard type == .products, var products = items.product else {
+              return // Handle the case when the type is not products
+          }
+          
+          if let index = products.firstIndex(where: { $0.id == productID }) {
+              products[index].isFavourite = isFavorite
+              items.product = products
+          }
+      }
 }

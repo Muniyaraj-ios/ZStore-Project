@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct HomeDataModel: Codable{
+public struct HomeDataModel: Codable{
   let category: [CategoryModel]
   let card_offers: [CardOfferModel]
   let products: [ProductsDataModel]
@@ -16,13 +16,13 @@ extension HomeDataModel{
     static let emptyData = HomeDataModel(category: [], card_offers: [], products: [])
 }
 
-struct CategoryModel: Codable{
+public struct CategoryModel: Codable{
   let id: String
   let name: String
   let layout: String
 }
 
-struct CardOfferModel: Codable{
+public struct CardOfferModel: Codable{
   let id: String
   let percentage: Double
   let card_name: String
@@ -31,7 +31,7 @@ struct CardOfferModel: Codable{
   let image_url: String
 }
 
-struct ProductsDataModel: Codable{
+public struct ProductsDataModel: Codable{
   let id: String
   let name: String
   let rating: Double

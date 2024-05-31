@@ -17,7 +17,7 @@ class OfferCollectionCell: BaseCollectionCell {
     let OfferLbl = UILabel(text: "Upto $5000 Cashback", textColor: .White, font: .setFont(size: 20, weight: .bold), line: 2)
     
     let iconBgView = UIView()
-    let icon = UIImageView(cornerRadius: 0,mode: .scaleAspectFill)
+    let icon = UIImageView(cornerRadius: 0,mode: .scaleAspectFit)
     
     override func initalSetup() {
         super.initalSetup()
@@ -25,16 +25,18 @@ class OfferCollectionCell: BaseCollectionCell {
         bgContainerView.makeEdgeConstraints(toView: self,edge: .init(top: 0, left: 0, bottom: 0, right: 25))
         
         iconBgView.addSubview(icon)
-        icon.makeEdgeConstraints(toView: iconBgView,edge: .init(top: 10, left: 10, bottom: 10, right: 10))
+        icon.makeEdgeConstraints(toView: iconBgView,edge: .init(top: 5, left: 5, bottom: 5, right: 5))
         addSubview(iconBgView)
         iconBgView.makeEdgeConstraints(top: topAnchor, leading: nil, trailing: trailingAnchor, bottom: bottomAnchor, edge: .init(top: 10, left: 0, bottom: 15, right: 0),width: 100)
-        icon.image = UIImage(named: "health")
+//        icon.image = UIImage(named: "health")
+        icon.clipsToBounds = true
         iconBgView.backgroundColor = .WhiteOpacity
         iconBgView.cornerRadiusWithBorder(corner: 10,isBorder: false)
+        icon.cornerRadiusWithBorder(corner: 10,isBorder: false)
         
         let titleVertical = VerticalStack(arrangedSubViews: [titleLbl,SubtitleLbl,OfferLbl], spacing: 6, alignment: .leading, distribution: .fill)
         bgContainerView.addSubview(titleVertical)
-        titleVertical.makeEdgeConstraints(top: bgContainerView.topAnchor, leading: bgContainerView.leadingAnchor, trailing: iconBgView.leadingAnchor, bottom: nil,edge: .init(top: 13, left: 10, bottom: 10, right: 10))
+        titleVertical.makeEdgeConstraints(top: bgContainerView.topAnchor, leading: bgContainerView.leadingAnchor, trailing: iconBgView.leadingAnchor, bottom: nil,edge: .init(top: 13, left: 10, bottom: 10, right: 6))
         titleVertical.bottomAnchor.constraint(lessThanOrEqualTo: bgContainerView.bottomAnchor, constant: -10).isActive = true
         bgContainerView.backgroundColor = .BlueSub
 //        setGradientBackground(topColor: .BlueSub, bottomColor: .Blue)
@@ -49,7 +51,8 @@ class OfferCollectionCell: BaseCollectionCell {
         let place = UIImage(named: "health")
         icon.sd_setImage(with: url, placeholderImage: place)
     }
-    func setupConfigure(_ offer: CardOfferEntity){
+    func setupConfigure(_ offer: CardOfferEntity?){
+        guard let offer = offer else{return}
         titleLbl.text = offer.card_name
         SubtitleLbl.text = offer.offer_desc
         OfferLbl.text = offer.max_discount

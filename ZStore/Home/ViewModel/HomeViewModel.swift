@@ -23,17 +23,18 @@ class HomeViewModel{
         }
     }
     
-    func fetchfreshData(closure: (()->())?){
+    func fetchfreshData(closure: ((String?,Error?)->())?){
         let networkManager = APIManger()
         networkManager.getAllData(networkManager.getURLRequest()!) { (result: Results<HomeDataModel,Error>) in
             DispatchQueue.main.async {
                 switch result{
                 case .success(let mainData):
-                    self.homeData =  mainData
                     print("MainData : \(mainData)")
-                    closure?()
+                    self.homeData =  mainData
+                    closure?("Data Feteched Success",nil)
                 case .failure(let error):
                     print("Error : \(error.localizedDescription)")
+                    closure?(nil,error)
                 }
             }
         }

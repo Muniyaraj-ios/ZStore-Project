@@ -7,6 +7,10 @@
 
 import UIKit
 
+public struct Constant{
+    static let ruppes = "₹"
+}
+
 extension UIColor{
     static let BlackColor = UIColor(named: "BlackColor") ?? .black
     static let WhiteColor = UIColor(named: "WhiteColor") ?? .white
@@ -19,4 +23,13 @@ extension UIColor{
     static let OrangeBg = UIColor(named: "OrangeBg") ?? .systemGray
     static let Blue = UIColor(named: "Blue") ?? .systemGray
     static let BlueSub = UIColor(named: "BlueSub") ?? .systemGray
+}
+extension Double{
+    func removeZerosFromEnd(min minVal: Int = 0,max maxVal: Int = 2) -> String {
+        let formatter = NumberFormatter()
+        let number = NSNumber(value: self)
+        formatter.minimumFractionDigits = minVal
+        formatter.maximumFractionDigits = maxVal
+        return String(formatter.string(from: number) ?? "")
+    }
 }

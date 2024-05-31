@@ -11,7 +11,6 @@
 		180DB2A82C07B6410007BBD3 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DB2A72C07B6410007BBD3 /* APIManager.swift */; };
 		180DB2D22C07C6560007BBD3 /* CategoryEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DB2CC2C07C6560007BBD3 /* CategoryEntity+CoreDataClass.swift */; };
 		180DB2D32C07C6560007BBD3 /* CategoryEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DB2CD2C07C6560007BBD3 /* CategoryEntity+CoreDataProperties.swift */; };
-		180DB2D42C07C6560007BBD3 /* ProductsEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DB2CE2C07C6560007BBD3 /* ProductsEntity+CoreDataProperties.swift */; };
 		180DB2D52C07C6560007BBD3 /* ProductsEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DB2CF2C07C6560007BBD3 /* ProductsEntity+CoreDataClass.swift */; };
 		180DB2D62C07C6560007BBD3 /* CardOfferEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DB2D02C07C6560007BBD3 /* CardOfferEntity+CoreDataProperties.swift */; };
 		180DB2D72C07C6560007BBD3 /* CardOfferEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DB2D12C07C6560007BBD3 /* CardOfferEntity+CoreDataClass.swift */; };
@@ -41,6 +40,7 @@
 		18F5D38D2BB86DF500CA6D7B /* OfferHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F5D38C2BB86DF500CA6D7B /* OfferHeaderView.swift */; };
 		18F5D38F2BB86E0800CA6D7B /* OfferFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F5D38E2BB86E0800CA6D7B /* OfferFooterView.swift */; };
 		A06CC05FDE5BC4B471404A1A /* Pods_ZStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91425EE01902CC0DE4D6CA62 /* Pods_ZStore.framework */; };
+		F929020F2C08A34600520CB2 /* ProductsEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F929020E2C08A34600520CB2 /* ProductsEntity+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +48,6 @@
 		180DB2A72C07B6410007BBD3 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		180DB2CC2C07C6560007BBD3 /* CategoryEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CategoryEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		180DB2CD2C07C6560007BBD3 /* CategoryEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CategoryEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		180DB2CE2C07C6560007BBD3 /* ProductsEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProductsEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		180DB2CF2C07C6560007BBD3 /* ProductsEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProductsEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		180DB2D02C07C6560007BBD3 /* CardOfferEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardOfferEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		180DB2D12C07C6560007BBD3 /* CardOfferEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardOfferEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -90,6 +89,7 @@
 		CA6C93B5297F6FB4BBA7022D /* Pods_ZStore_IITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZStore_IITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D232E2A936E6536828835298 /* Pods-ZStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZStore.release.xcconfig"; path = "Target Support Files/Pods-ZStore/Pods-ZStore.release.xcconfig"; sourceTree = "<group>"; };
 		E95D8E5EBE3124158B5BD61B /* Pods-ZStore IITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZStore IITests.debug.xcconfig"; path = "Target Support Files/Pods-ZStore IITests/Pods-ZStore IITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F929020E2C08A34600520CB2 /* ProductsEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProductsEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +118,7 @@
 				180DB2D12C07C6560007BBD3 /* CardOfferEntity+CoreDataClass.swift */,
 				180DB2D02C07C6560007BBD3 /* CardOfferEntity+CoreDataProperties.swift */,
 				180DB2CF2C07C6560007BBD3 /* ProductsEntity+CoreDataClass.swift */,
-				180DB2CE2C07C6560007BBD3 /* ProductsEntity+CoreDataProperties.swift */,
+				F929020E2C08A34600520CB2 /* ProductsEntity+CoreDataProperties.swift */,
 				180DB2CC2C07C6560007BBD3 /* CategoryEntity+CoreDataClass.swift */,
 				180DB2CD2C07C6560007BBD3 /* CategoryEntity+CoreDataProperties.swift */,
 			);
@@ -266,16 +266,8 @@
 			children = (
 				18BA7AFA2BB02FDA00B14F55 /* Header */,
 				18BA7AF92BB02FD200B14F55 /* Cells */,
-				18BA7AF82BB02FCB00B14F55 /* Footer */,
 			);
 			path = Collections;
-			sourceTree = "<group>";
-		};
-		18BA7AF82BB02FCB00B14F55 /* Footer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Footer;
 			sourceTree = "<group>";
 		};
 		18BA7AF92BB02FD200B14F55 /* Cells */ = {
@@ -469,7 +461,6 @@
 				180DB2D62C07C6560007BBD3 /* CardOfferEntity+CoreDataProperties.swift in Sources */,
 				181437F52BAB68E200C29135 /* BaseVC.swift in Sources */,
 				181437F12BAB67B600C29135 /* HomeModel.swift in Sources */,
-				180DB2D42C07C6560007BBD3 /* ProductsEntity+CoreDataProperties.swift in Sources */,
 				181437B12BAB59BE00C29135 /* SceneDelegate.swift in Sources */,
 				180DB2D72C07C6560007BBD3 /* CardOfferEntity+CoreDataClass.swift in Sources */,
 				18F5D38D2BB86DF500CA6D7B /* OfferHeaderView.swift in Sources */,
@@ -482,6 +473,7 @@
 				18BA7B022BB03D7F00B14F55 /* OfferCollectionCell.swift in Sources */,
 				18F5D38F2BB86E0800CA6D7B /* OfferFooterView.swift in Sources */,
 				18BA7B062BB0836A00B14F55 /* ProductColorCollectionCell.swift in Sources */,
+				F929020F2C08A34600520CB2 /* ProductsEntity+CoreDataProperties.swift in Sources */,
 				1819ADE12C08174A00B40C87 /* AttributedString+Extension.swift in Sources */,
 				1803C9142BB34C3C00645B08 /* ProductItemCollectionCell.swift in Sources */,
 				181437E62BAB5A7000C29135 /* UIKit+Extension.swift in Sources */,
@@ -622,8 +614,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ZStore/Mains/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -638,6 +632,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zstore.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -650,8 +645,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ZStore/Mains/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -666,6 +663,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zstore.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

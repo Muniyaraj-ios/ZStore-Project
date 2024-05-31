@@ -262,7 +262,7 @@ class HomeViewController: BaseVC {
         collectionView.dataSource = self
     }
     private func fetchResult(){
-        homeVM.fetchfreshData{ [self] in
+        homeVM.fetchfreshData{ [self] _,_  in
             print("Data fetched success")
             collectreloadData()
         }
@@ -274,6 +274,7 @@ class HomeViewController: BaseVC {
     private func collectreloadData(){
         DispatchQueue.main.async { [self] in
             collectionView.setCollectionViewLayout(compLayout(), animated: false)
+            collectionView.reloadData()
         }
         collectionView.reloadData()
     }

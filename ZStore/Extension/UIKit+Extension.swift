@@ -179,3 +179,20 @@ extension UIImageView{
         self.clipsToBounds = true
     }
 }
+
+extension UIView{
+    func addTap(count : Int = 1,action : @escaping() -> Void){
+        let tap = MyGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+        tap.action = action
+        tap.numberOfTapsRequired = count
+        self.addGestureRecognizer(tap)
+        self.isUserInteractionEnabled = true
+    }
+    @objc func handleTap(_ sender: MyGestureRecognizer){
+        sender.action?()
+    }
+    
+    class MyGestureRecognizer : UITapGestureRecognizer{
+        var action : (()->(Void))? = nil
+    }
+}

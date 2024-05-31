@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "up-down-2.png",
+      "filename" : "boost_25x25.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "boost_1_50x50-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "boost_2_75x75.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
@@ -17,5 +19,8 @@
   "info" : {
     "author" : "xcode",
     "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "template"
   }
 }
